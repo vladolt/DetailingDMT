@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="galerie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Galerie</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav class="navigation">
+          <a href="index.html"><img class="logo" src="logo-bg.png" alt="" /></a>
+          <div class="head">
+            <ul class="list">
+              <li class="list-item"><a href="index.html">Acasa</a></li>
+              <li class="list-item">
+                <a href="index.html#servicii">Servicii</a>
+              </li>
+              <li class="list-item"><a href="galerie.html"></a>Galerie</li>
+              <li class="list-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button class="btn-mobile--nav">
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+        <button class="btn-mobile--close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <section class="section-hero">
+        <div class="container">
+          <h1 class="h1">Galerie</h1>
+        </div>
+      </section>
+      <div class="images-cont">
+        <img class="gal-img--1" src="tesla-4.jpg" alt="" />
+        <img class="gal-img--3" src="lambo-2-min.jpg" alt="" />
+        <img class="gal-img--4" src="g-school.jpg" alt="" />
+        <!-- <img class="gal-img--4" src="galerie/m-2-min.jpg" alt="" />
+        <img class="gal-img--4" src="galerie/m-1-min.jpg" alt="" /> -->
+        <img src="body-fence.jpg" alt="" />
+        <img class="gal-img--2" src="tesla-3.jpg" alt="" />
+        <img class="gal-img--4" src="audi--dmt-min.jpg" alt="" />
+        <img src="4-min.jpg" alt="" />
+        <img src="yo-min.jpg" alt="" />
+        <img class="tesla-g" src="tesla-g-min.jpg" alt="" />
+        <img class="audi-pro" src="audi-1--pro-min.jpg" alt="" />
+        <img class="single" src="single-1-min.jpg" alt="" />
+        <img class="acre-g" src="g-acre-min.jpg" alt="" />
+        <img src="orange-shirt-min.jpg" alt="" />
+        <img src="car-hub-acc-min.jpg" alt="" />
+        <img src="porsche-ju-min.jpg" alt="" />
+        <img src="lambo-white-min.jpg" alt="" />
+      </div>
+      <!-- <div class="img--img">
+        <img src="galerie/orange-shirt-min.jpg" alt="" />
+        <img src="galerie/car-hub-acc-min.jpg" alt="" />
+        <img src="galerie/porsche-ju-min.jpg" alt="" />
+        <img src="" alt="" />
+      </div> -->
+    </main>
+    <script defer>
+      const btnNav = document.querySelector(".btn-mobile--nav");
+      const btnClose = document.querySelector(".btn-mobile--close");
+      const headerOp = document.querySelector(".header");
+
+      btnNav.addEventListener("click", function () {
+        headerOp.classList.toggle("nav-open");
+      });
+      btnClose.addEventListener("click", function () {
+        headerOp.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>

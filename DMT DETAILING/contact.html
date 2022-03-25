@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="queries.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Contact</title>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <nav class="navigation">
+          <a href="index.html"><img class="logo" src="logo-bg.png" alt="" /></a>
+          <div class="head">
+            <ul class="list">
+              <li class="list-item"><a href="index.html">Acasa</a></li>
+              <li class="list-item">
+                <a href="index.html#servicii">Servicii</a>
+              </li>
+              <li class="list-item"><a href="galerie.html">Galerie</a></li>
+              <li class="list-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button class="btn-mobile--nav">
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+        <button class="btn-mobile--close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </header>
+    </main>
+    <section class="section-hero">
+      <div class="contact-cont">
+        <h1 class="h1">Contact INFO</h1>
+        <h2 class="main-heading">
+          <span>Adresa:</span><br />Thurzo Sandor, 410098, Oradea
+        </h2>
+        <h2 class="main-heading">
+          <span>Email:</span><br />dmtdetailing@gmail.com
+        </h2>
+        <h2 class="main-heading"><span>Telefon:</span><br />+0731587973</h2>
+      </div>
+    </section>
+    <div class="social-contact">
+      <p class="social-p">Viziteaza-ne pe Social Media !</p>
+      <div class="instface-cont">
+        <a href="https://www.instagram.com/dmtdetailing/"
+          ><ion-icon class="instagram" name="logo-instagram"></ion-icon
+        ></a>
+        <a
+          href="https://www.facebook.com/DMTDetailing/photos/?ref=page_internal"
+          ><ion-icon class="facebook" name="logo-facebook"></ion-icon
+        ></a>
+      </div>
+    </div>
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.150405549973!2d21.929240015585307!3d47.037279379151066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474647fc219c1b53%3A0xf8ce3b3ec3b5ebbd!2sDMT%20Detailing%20-%20PPF%2C%20Ceramica%2C%20Polish%20%26%20Cosmetica%20Auto!5e0!3m2!1sen!2sro!4v1647451208186!5m2!1sen!2sro"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <script defer>
+      const btnNav = document.querySelector(".btn-mobile--nav");
+      const btnClose = document.querySelector(".btn-mobile--close");
+      const headerOp = document.querySelector(".header");
+
+      btnNav.addEventListener("click", function () {
+        headerOp.classList.toggle("nav-open");
+      });
+      btnClose.addEventListener("click", function () {
+        headerOp.classList.toggle("nav-open");
+      });
+    </script>
+  </body>
+</html>
